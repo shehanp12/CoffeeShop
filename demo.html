@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="i.js"></script>
+</head>
+<body>
+
+    		<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.6.1/firebase-analytics.js"></script>
+
+<script>
+ 
+  
+$(document).ready(function() {
+    if ($('#newContact').length > 0 ) {
+        contactScript('forcontact');
+    }
+});
+
+firebase.initializeApp(firebaseConfig);
+     firebase.analytics();
+ 
+
+</script>
+
+
+    <form class="sucess-none" id="newContact">
+        <div class="inputs">
+            <input type="text" value="" name="FNAME" class="required name" id="name" placeholder="Name:">
+      
+            <input type="email" value="" name="EMAIL" class="required email" id="email" placeholder="Email:">
+        </div>
+        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+            <input type="text" name="b_96d9e6e519173af7bdbdab9d_23138bd741" tabindex="-1" value="">
+        </div>
+        <input type="submit" class="btn" value="Submit" name="subscribe" id="submitContact">
+      </form>
+
+
+    
+</body>
+</html>
+
+
+
+
+
+
+
