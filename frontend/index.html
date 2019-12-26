@@ -214,7 +214,7 @@
 <!--Reservation-->
 			<div class="row bg-light">
 				<div class="col">
-					<form name="form1" method="POST" action="reserve.php">
+					<form name="form1" onsubmit="submitReservation(FormData)">
 
 						<div class="form-row">
 						  	<div class="form-group col-6">
@@ -314,6 +314,7 @@ in Sri Lanka.
 		<script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
 		<script type="text/javascript" src="js/image-effect.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFZjOV0KA68G2YAh-rn7I3qKqCQEh_Ja0&callback=myMap">
-	    </script>
+		</script>
+		<script src="controllers/reservationController.js"></script>
   	</body>
 </html>
