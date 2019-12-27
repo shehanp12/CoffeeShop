@@ -214,38 +214,38 @@
 <!--Reservation-->
 			<div class="row bg-light">
 				<div class="col">
-					<form name="form1" onsubmit="submitReservation(FormData)">
+					<form name="form1" method="POST" action="/">
 
 						<div class="form-row">
 						  	<div class="form-group col-6">
 						  		<h3>Reserve</h3>
 						  		<label for="inputDate"> Date</label>
-						  		<input type="date" class="form-control" id="inputDate" placeholder="Data gg/mm/aaaa" required>
+						  		<input type="date" class="form-control" id="inputDate" name="date" placeholder="Data gg/mm/aaaa" required>
 						  	</div>
 						  	<div class="form-group col-6">
 						  		<h3>Details</h3>
 						  		<label for="inputName"> Name</label>
-						  		<input type="text" class="form-control" id="inputName" placeholder="Name"  required>
+						  		<input type="text" class="form-control" name="name" id="inputName" placeholder="Name"  required>
 						  	</div>
 						  	<div class="form-group col-6">
 						  		<label for="inputTime"> Timetables</label>
-						  		<input type="time" class="form-control" id="inputTime" placeholder="Timetables" required>
+						  		<input type="time" class="form-control" name="time" id="inputTime" placeholder="Timetables" required>
 						  	</div>
 						  	<div class="form-group col-6">
 						  		<label for="inputEmail"> Email</label>
-						  		<input type="email" class="form-control" id="inputEmail" placeholder="Email" required>
+						  		<input type="email" class="form-control" name="email" id="inputEmail" placeholder="Email" required>
 						  	</div>
 						  	<div class="form-group col-6">
 						  		<label for="inputNumber"> Number of Guests</label>
-						  		<input type="number" class="form-control" id="inputNumber" placeholder="Number of Guests" required>
+						  		<input type="number" class="form-control" name="numG" id="inputNumber" placeholder="Number of Guests" required>
 						  	</div>
 						  	<div class="form-group col-6">
 						  		<label for="inputCel"> Phone</label>
-						  		<input type="tel" class="form-control" id="inputCel" placeholder="Phone" pattern="^\d{10}$" required>
+						  		<input type="tel" class="form-control" name="phone" id="inputCel" placeholder="Phone" pattern="^\d{10}$" required>
 						  	</div>
   							<div class="form-group col-12">
   								<label for="inputComment"> Further requests</label>
-								<textarea class="form-control" rows="4" id="inputComment" placeholder="Further requests"></textarea>
+								<textarea class="form-control" name="area" rows="4" id="inputComment" placeholder="Further requests"></textarea>
 							</div>
 					 	</div>
 						<div class="row">
@@ -315,6 +315,6 @@ in Sri Lanka.
 		<script type="text/javascript" src="js/image-effect.js"></script>
 		<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDFZjOV0KA68G2YAh-rn7I3qKqCQEh_Ja0&callback=myMap">
 		</script>
-		<script src="controllers/reservationController.js"></script>
+		<script src="reservationController.js"></script>
   	</body>
 </html>
